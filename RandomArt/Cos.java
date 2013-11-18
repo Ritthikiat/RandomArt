@@ -2,7 +2,7 @@
 /**
  * Write a description of class Cos here.
  * 
- * @author (your name) 
+ * @author (Ritthikiat and Athitiya) 
  * @version (a version number or a date)
  */
 public class Cos extends Tree
@@ -18,6 +18,16 @@ public class Cos extends Tree
      */
     public Cos(int level)
     {
+        nextLevel( level);
+    }
+
+    /**
+     * An example of a method - replace this comment with your own
+     * 
+     * @param  y   a sample parameter for a method
+     * @return     the sum of x and y 
+     */
+    public void nextLevel(int level){
         i = (int)(Math.random()*3);
         if(level > 1){
             if(i==0){
@@ -44,18 +54,11 @@ public class Cos extends Tree
                 ava = new VariableY();
             }
         }
-
+        
     }
+    public double returnValue(double x,double y){
 
-    /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
-     */
-    public double returnDouble(double x,double y){
-
-        return Math.cos(Math.PI*nextTree.returnDouble(x,y));
+        return Math.cos(Math.PI*nextTree.returnValue(x,y));
     }
 
     public String returnString(){

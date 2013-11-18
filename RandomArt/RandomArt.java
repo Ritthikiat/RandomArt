@@ -17,7 +17,15 @@ public class RandomArt extends JPanel {
 	
     public RandomArt(){
         
-        setSize(300,300);
+        randomPanel();
+        fuctionr = tred.returnString();
+        fuctiong = tgreen.returnString();
+        fuctionb = tblue.returnString();
+   
+    }
+    
+    public void randomPanel(){
+        
         int red = (int)(Math.random()*3);
         if(red == 0){
             tred = new Sin((int)(Math.random()*8+4));
@@ -45,20 +53,16 @@ public class RandomArt extends JPanel {
         
         int blue =(int)(Math.random()*3);
          if(blue == 0){
-            tblue = new Sin((int)(Math.random()*8+4));
+            tblue = new Sin((int)(Math.random()*6+4));
             
             
         }
         else if(blue == 1){
-            tblue = new Cos((int)(Math.random()*8+4));
+            tblue = new Cos((int)(Math.random()*6+4));
         }
         else if(blue == 2){
-            tblue = new Average((int)(Math.random()*8+4));
+            tblue = new Average((int)(Math.random()*6+4));
         }
-        
-        fuctionr = tred.returnString();
-        fuctiong = tgreen.returnString();
-        fuctionb = tblue.returnString();
         
         
     }
@@ -75,22 +79,17 @@ public class RandomArt extends JPanel {
     
 	public void doDrawing(Graphics g) {
 		
-		Graphics2D g24 = (Graphics2D) g;
+		Graphics2D g2d = (Graphics2D) g;
 		
 		for(int i = 0; i < getWidth(); i++){
 			for(int o = 0; o < getHeight(); o++ ){
 			    double x = ((((double) i) / getWidth()) * 2.0) - 1.0;
                 double y = ((((double) o) / getHeight()) * 2.0) - 1.0;
-                
-                
-                
-                double red = tred.returnDouble( x,  y);
-                double green = tgreen.returnDouble( x,  y);
-                double blue = tblue.returnDouble( x,  y);
-				g24.setColor(new Color(rgb(red),rgb(green),rgb(blue)));
-				g24.fillRect(i, o, i, o);
-				
-				
+                double red = tred.returnValue( x,  y);
+                double green = tgreen.returnValue( x,  y);
+                double blue = tblue.returnValue( x,  y);
+				g2d.setColor(new Color(rgb(red),rgb(green),rgb(blue)));
+				g2d.fillRect(i, o, i, o);
 			}
 		}
 	}

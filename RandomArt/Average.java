@@ -2,7 +2,7 @@
 /**
  * Write a description of class Average here.
  * 
- * @author (your name) 
+ * @author (Ritthikiat and Athitiya) 
  * @version (a version number or a date)
  */
 public class Average extends Tree
@@ -18,6 +18,16 @@ public class Average extends Tree
      */
     public Average(int level)
     {
+        nextLevel(level);
+    }
+
+    /**
+     * An example of a method - replace this comment with your own
+     * 
+     * @param  y   a sample parameter for a method
+     * @return     the sum of x and y 
+     */
+    public void nextLevel(int level){
         i = (int)(Math.random()*3);
         if(level > 1){
             if(i==0){
@@ -44,20 +54,11 @@ public class Average extends Tree
                 ava = new VariableY();
             }
         }
-
-        
         
     }
-
-    /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
-     */
-    public double returnDouble(double x,double y){
+    public double returnValue(double x,double y){
         
-        return (nextTree.returnDouble(x,y)+ ava.returnDouble(x,y))/2 ;
+        return (nextTree.returnValue(x,y)+ ava.returnValue(x,y))/2 ;
     }
     
     

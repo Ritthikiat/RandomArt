@@ -2,13 +2,13 @@
 /**
  * Write a description of class Y here.
  * 
- * @author (your name) 
+ * @author (Ritthikiat and Athitiya) 
  * @version (a version number or a date)
  */
 public class VariableY extends Tree
 {
     // instance variables - replace the example below with your own
-    private int x;
+   
 
     /**
      * Constructor for objects of class Y
@@ -16,7 +16,7 @@ public class VariableY extends Tree
     public VariableY()
     {
         // initialise instance variables
-        x = 0;
+        
     }
 
     /**
@@ -25,7 +25,7 @@ public class VariableY extends Tree
      * @param  y   a sample parameter for a method
      * @return     the sum of x and y 
      */
-    public  double returnDouble(double x,double y){
+    public  double returnValue(double x,double y){
         
         return y;
         

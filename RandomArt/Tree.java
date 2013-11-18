@@ -2,7 +2,7 @@
 /**
  * Abstract class Tree - write a description of the class here
  * 
- * @author (your name here)
+ * @author (Ritthikiat and Athitiya)
  * @version (version number or date here)
  */
 public abstract class Tree
@@ -16,7 +16,7 @@ public abstract class Tree
      * @param  y    a sample parameter for a method
      * @return        the sum of x and y 
      */
-    public abstract double returnDouble(double x,double y);
+    public abstract double returnValue(double x,double y);
     
     public abstract String returnString();
     

@@ -21,7 +21,6 @@ public class Mainframe extends JPanel{
 	public Mainframe(){
 		setLayout(new BorderLayout());
 		add(tap(),BorderLayout.NORTH);
-		
 		RandomArt rd = new RandomArt();
 		repaint();
 	    add(rd);
@@ -33,7 +32,7 @@ public class Mainframe extends JPanel{
 		tap.setPreferredSize(new Dimension(20,190));
 		tap.add(menubar1());
 		tap.add(tap2());
-		tap.add(button3());
+		//tap.add(button3());
 		tap.add(name());
 		
 		return tap;
@@ -52,7 +51,7 @@ public class Mainframe extends JPanel{
 	}
 	public JLabel name(){
 		JLabel name = new JLabel();
-		name.setText("     xxxxxxxx     ");
+		name.setText("     Ritthikiat and Athitiya     ");
 		name.setForeground(Color.WHITE);
 		
 		
@@ -114,11 +113,11 @@ public class Mainframe extends JPanel{
 		return button;
 	}
 	
-	public JButton button3(){
+	/**public JButton button3(){
 		JButton button = new JButton("Save");
 		
 		return button;
-	}
+	}*/
 	
 	public JMenuBar menubar1(){
 		JMenuBar menubar = new JMenuBar();

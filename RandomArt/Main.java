@@ -10,9 +10,9 @@ public class Main {
 		JFrame frame = new JFrame("RandomArt");
 		Mainframe mainframe = new Mainframe();
 	    frame.add(mainframe);
-		frame.setSize(new Dimension(50,200));
+		frame.setSize(new Dimension(250,150));
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		frame.setResizable(false);
+		//frame.setResizable(false);
 		frame.setVisible(true);
 		
 		

@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.params=x\ y
-comment0.target=double\ returnDouble(double,\ double)
+comment0.target=double\ returnValue(double,\ double)
 comment0.text=\r\n\ An\ example\ of\ a\ method\ -\ replace\ this\ comment\ with\ your\ own\r\n\ \r\n\ @param\ \ y\ \ \ \ a\ sample\ parameter\ for\ a\ method\r\n\ @return\ \ \ \ \ \ \ \ the\ sum\ of\ x\ and\ y\ \r\n
 comment1.params=
 comment1.target=java.lang.String\ returnString()

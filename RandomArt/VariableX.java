@@ -2,21 +2,20 @@
 /**
  * Write a description of class X here.
  * 
- * @author (your name) 
+ * @author (Ritthikiat and Athitiya) 
  * @version (a version number or a date)
  */
 public class VariableX extends Tree
 {
     // instance variables - replace the example below with your own
-    private int x;
+    
 
     /**
      * Constructor for objects of class X
      */
     public VariableX ()
     {
-        // initialise instance variables
-        x = 0;
+        
     }
 
     /**
@@ -25,7 +24,7 @@ public class VariableX extends Tree
      * @param  y   a sample parameter for a method
      * @return     the sum of x and y 
      */
-    public  double returnDouble(double x,double y){
+    public  double returnValue(double x,double y){
         
         return x;
     }

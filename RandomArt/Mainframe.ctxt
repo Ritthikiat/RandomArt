@@ -16,7 +16,6 @@ comment6.target=javax.swing.JButton\ button2()
 comment7.params=event
 comment7.target=void\ actionPerformed(java.awt.event.ActionEvent)
 comment8.params=
-comment8.target=javax.swing.JButton\ button3()
-comment9.params=
-comment9.target=javax.swing.JMenuBar\ menubar1()
-numComments=10
+comment8.target=javax.swing.JMenuBar\ menubar1()
+comment8.text=public\ JButton\ button3(){\r\n\t\tJButton\ button\ \=\ new\ JButton("Save");\r\n\t\t\r\n\t\treturn\ button;\r\n}
+numComments=9

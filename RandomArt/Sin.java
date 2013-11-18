@@ -2,7 +2,7 @@
 /**
  * Write a description of class Sin here.
  * 
- * @author (your name) 
+ * @author (Ritthikiat and Athitiya) 
  * @version (a version number or a date)
  */
 public class Sin extends Tree
@@ -20,7 +20,23 @@ public class Sin extends Tree
      */
     public Sin(int level)
     {
-       i = (int)(Math.random()*3);
+        nextLevel(level);
+    }
+
+    /**
+     * An example of a method - replace this comment with your own
+     * 
+     * @param  y   a sample parameter for a method
+     * @return     the sum of x and y 
+     */
+    
+    
+        
+    
+    
+    public void nextLevel(int level){
+        
+         i = (int)(Math.random()*3);
         if(level > 1){
             if(i==0){
                 nextTree = new Sin(level-1);
@@ -46,18 +62,10 @@ public class Sin extends Tree
                 ava = new VariableY();
             }
         }
-
     }
-
-    /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
-     */
-    public double returnDouble(double x,double y){
+    public double returnValue(double x,double y){
               
-        return Math.sin(Math.PI*nextTree.returnDouble(x,y));
+        return Math.sin(Math.PI*nextTree.returnValue(x,y));
     }
 
     public String returnString(){
