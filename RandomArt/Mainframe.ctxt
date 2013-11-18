@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Mainframe()
+comment1.params=
+comment1.target=javax.swing.JPanel\ tap()
+comment2.params=
+comment2.target=javax.swing.JPanel\ tap2()
+comment3.params=
+comment3.target=javax.swing.JLabel\ name()
+comment4.params=
+comment4.target=javax.swing.JButton\ button1()
+comment5.params=event
+comment5.target=void\ actionPerformed(java.awt.event.ActionEvent)
+comment6.params=
+comment6.target=javax.swing.JButton\ button2()
+comment7.params=event
+comment7.target=void\ actionPerformed(java.awt.event.ActionEvent)
+comment8.params=
+comment8.target=javax.swing.JButton\ button3()
+comment9.params=
+comment9.target=javax.swing.JMenuBar\ menubar1()
+numComments=10
