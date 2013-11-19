@@ -5,22 +5,22 @@
  * @author (Ritthikiat and Athitiya) 
  * @version (a version number or a date)
  */
-public class Sin extends Tree
+public class Sin extends BinaryTree
 {
     // instance variables - replace the example below with your own
     private double i;
     private double j;
-    private Tree nextTree;
-    private Tree ava;
+    private BinaryTree nextTree;
+    private BinaryTree ava;
 
     
 
     /**
      * Constructor for objects of class Sin
      */
-    public Sin(int level)
+    public Sin(int hight)
     {
-        nextLevel(level);
+        nextHight(hight);
     }
 
     /**
@@ -34,21 +34,21 @@ public class Sin extends Tree
         
     
     
-    public void nextLevel(int level){
+    public void nextHight(int hight){
         
          i = (int)(Math.random()*3);
-        if(level > 1){
+        if(hight > 1){
             if(i==0){
-                nextTree = new Sin(level-1);
-                ava = new Sin(level-1);
+                nextTree = new Sin(hight-1);
+                ava = new Sin(hight-1);
             }
             if(i==1){
-                nextTree = new Cos(level-1);
-                ava = new Cos(level-1);
+                nextTree = new Cos(hight-1);
+                ava = new Cos(hight-1);
             }
             if(i==2){
-                nextTree = new Average(level-1);
-                ava = new Average(level-1);
+                nextTree = new Average(hight-1);
+                ava = new Average(hight-1);
             }
 
         }else{

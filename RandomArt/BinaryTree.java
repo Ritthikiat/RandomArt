@@ -1,11 +1,11 @@
 
 /**
- * Abstract class Tree - write a description of the class here
+ * Abstract class BinaryTree - write a description of the class here
  * 
  * @author (Ritthikiat and Athitiya)
  * @version (version number or date here)
  */
-public abstract class Tree
+public abstract class BinaryTree
 {
     // instance variables - replace the example below with your own
     

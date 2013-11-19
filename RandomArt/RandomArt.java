@@ -1,3 +1,9 @@
+/**
+ * Write a description of class RandomArt here.
+ * 
+ * @author (Ritthikiat and Athitiya) 
+ * @version (a version number or a date)
+ */
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
@@ -6,9 +12,9 @@ import javax.swing.JPanel;
 
 public class RandomArt extends JPanel {
     
-    private Tree tRed;
-    private Tree tGreen;
-    private Tree tBlue;
+    private BinaryTree treeRed;
+    private BinaryTree treeGreen;
+    private BinaryTree treeBlue;
     private String functionR;
     private String functionG;
     private String functionB;
@@ -16,49 +22,49 @@ public class RandomArt extends JPanel {
     
     public RandomArt(){
         randomPanel();
-        functionR = tRed.returnString();
-        functionG = tGreen.returnString();
-        functionB = tBlue.returnString();
+        functionR = treeRed.returnString();
+        functionG = treeGreen.returnString();
+        functionB = treeBlue.returnString();
     }
     
     public void randomPanel(){
         
         int red = (int)(Math.random()*3);
         if(red == 0){
-            tRed = new Sin((int)(Math.random()*8+6));
+            treeRed = new Sin((int)(Math.random()*8+4));
             
         }
         else if(red == 1){
-            tRed = new Cos((int)(Math.random()*8+6));
+            treeRed = new Cos((int)(Math.random()*8+4));
         }
         else if(red == 2){
-            tRed = new Average((int)(Math.random()*8+6));
+            treeRed = new Average((int)(Math.random()*8+4));
         }
         
         
         int green = (int)(Math.random()*3);
         if(green == 0){
-            tGreen = new Sin((int)(Math.random()*8+6));
+            treeGreen = new Sin((int)(Math.random()*8+4));
             
         }
         else if(green == 1){
-            tGreen = new Cos((int)(Math.random()*8+6));
+            treeGreen = new Cos((int)(Math.random()*8+4));
         }
         else if(green == 2){
-            tGreen = new Average((int)(Math.random()*8+6));
+            treeGreen = new Average((int)(Math.random()*8+4));
         }
         
         int blue =(int)(Math.random()*3);
          if(blue == 0){
-            tBlue = new Sin((int)(Math.random()*8+6));
+            treeBlue = new Sin((int)(Math.random()*8+4));
             
             
         }
         else if(blue == 1){
-            tBlue = new Cos((int)(Math.random()*8+6));
+            treeBlue = new Cos((int)(Math.random()*8+4));
         }
         else if(blue == 2){
-            tBlue = new Average((int)(Math.random()*8+6));
+            treeBlue = new Average((int)(Math.random()*8+4));
         }
         
         
@@ -79,15 +85,15 @@ public class RandomArt extends JPanel {
         Graphics2D g2d = (Graphics2D) g;
         
         for(int i = 0; i < getWidth(); i++){
-            for(int o = 0; o < getHeight(); o++ ){
+            for(int j = 0; j < getHeight(); j++ ){
                 double x = ((((double) i) / getWidth()) * 2.0) - 1.0;
-                double y = ((((double) o) / getHeight()) * 2.0) - 1.0;
-                double red = tRed.returnValue( x,  y);
-                double green = tGreen.returnValue( x,  y);
-                double blue = tBlue.returnValue( x,  y);
+                double y = ((((double) j) / getHeight()) * 2.0) - 1.0;
+                double red = treeRed.returnValue( x,  y);
+                double green = treeGreen.returnValue( x,  y);
+                double blue = treeBlue.returnValue( x,  y);
                 
                 g2d.setColor(new Color(rgb(red),rgb(green),rgb(blue)));
-                g2d.fillRect(i, o, i, o);
+                g2d.fillRect(i, j, i, j);
             }
         }
     }

@@ -5,7 +5,7 @@
  * @author (Ritthikiat and Athitiya) 
  * @version (a version number or a date)
  */
-public class VariableY extends Tree
+public class VariableY extends BinaryTree
 {
     // instance variables - replace the example below with your own
    

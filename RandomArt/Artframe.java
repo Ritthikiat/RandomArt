@@ -1,3 +1,9 @@
+/**
+ * Write a description of class ArtFrame here.
+ * 
+ * @author (Ritthikiat and Athitiya) 
+ * @version (a version number or a date)
+ */
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Dimension;
@@ -16,12 +22,12 @@ import javax.swing.JPanel;
 import javax.swing.event.*;
 import java.awt.TextField;
 
-public class Artframe extends JPanel{
+public class ArtFrame extends JPanel{
     
     public RandomArt art; 
     private JPanel tap ;
    
-    public Artframe(){
+    public ArtFrame(){
         setLayout(new BorderLayout());
         add(tap(),BorderLayout.NORTH);
         this.art = new RandomArt();
